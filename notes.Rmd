@@ -1,0 +1,36 @@
+---
+title: "Notes"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+## Datasets
+
+The datasets under `data/` folder were collected and manually annotated by Giorgio, or downloaded from `https://doi.pangaea.de/10.1594/PANGAEA.942325` as part of the publication by Maus et at., "An update on global mining and land use" in Scientific Data (2022).
+
+From the data website:
+
+> This dataset updates the global-scale mining polygons (Version 1) available from <https://doi.org/10.1594/PANGAEA.910894>.
+> It contains 44,929 polygon features, covering 101,583 km² of land used by the global mining industry, including large-scale and artisanal and small-scale mining.
+> The polygons cover all ground features related to mining, .e.g open cuts, tailing dams, waste rock dumps, water ponds, processing infrastructure, and other land cover types related to the mining activities.
+> The data was derived using a similar methodology as the first version by visual interpretation of satellite images.
+> The study area was limited to a 10 km buffer around the 34,820 mining coordinates reported in the S&P metals and mining database.
+> We digitalized the mining areas using the 2019 Sentinel-2 cloudless mosaic with 10 m spatial resolution (<https://s2maps.eu> by EOX IT Services GmbH - Contains modified Copernicus Sentinel data 2019).
+> We also consulted Google Satellite and Microsoft Bing Imagery, but only as additional information to help identify land cover types linked to the mining activities.
+> The main data set consists of a GeoPackage (GPKG) file, including the following variables: ISO3_CODE<string>, COUNTRY_NAME<string>, AREA<double> in squared kilometres, FID<integer> with the feature ID, and geom<polygon> in geographical coordinates WGS84.
+> The summary of the mining area per country is available in comma-separated values (CSV) file, including the following variables: ISO3_CODE<string>, COUNTRY_NAME<string>, AREA<double> in squared kilometres, and N_FEATURES<integer> number of mapped features.
+> Grid data sets with the mining area per cell were derived from the polygons.
+> The grid data is available at 30 arc-second resolution (approximately 1x1 km at the equator), 5 arc-minute (approximately 10x10 km at the equator), and 30 arc-minute resolution (approximately 55x55 km at the equator).
+> We performed an independent validation of the mining data set using control points.
+> For that, we draw 1,000 random samples stratified between two classes: mine and no-mine.
+> The control points are also available as a GPKG file, including the variables: MAPPED<string>, REFERENCE<string>, FID<integer> with the feature ID, and geom<point> in geographical coordinates WGS84.
+> The overall accuracy calculated from the control points was 88.3%, Kappa 0.77, F1 score 0.87, producer's accuracy of class mine 78.9 % and user's accuracy of class mine 97.2 %.
+
+## To-Dos
+
+-   Explore mining datasets
+
+-   Combine with biodiverstiy (GeoBON) raster data and resilience loss estimates for terrestrial systems
+
+-   Diff-in-diff approach quantifying the effect of mining on biodiversity loss?
