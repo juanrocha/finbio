@@ -34,3 +34,18 @@ From the data website:
 -   Combine with biodiverstiy (GeoBON) raster data and resilience loss estimates for terrestrial systems
 
 -   Diff-in-diff approach quantifying the effect of mining on biodiversity loss?
+
+## Meetings
+
+### 230615
+
+Collaborators suggested the following datasets:
+
+-   Global china databases: tracks Chinese investments, perhaps a way to track ownership of Chinese vessels (<https://www.bu.edu/gdp/research/databases/global-china-databases/>)
+
+-   Carbon Disclosure Project: tracks C, water and forestry impacts of companies (historical and current) <https://www.cdp.net/en>
+
+-   Hydrobasins database (<https://www.hydrosheds.org/products/hydrobasins>) has information of basins in case it is useful to track impact of mining operations further down the basin.
+    According to Garry most impacts are off site by polluting water or extracting water that then does not go to ecosystems (both surfance and ground water).
+
+-   Spatial finance initiative (<https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/geoasset-databases/>) offers open data on geographically explicit location of relevant finance activities such as cement, beef abattoirs, iron and steel, petrochemicals, paper and pulb and waste management.
