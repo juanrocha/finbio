@@ -100,9 +100,9 @@ df_maus |>
     theme_classic()
 
 
-df_maus |> 
+df_maus |> as_tibble() |> 
     mutate(mining = mining_area > 0) |> 
-    #filter(mining_area > 0, !is.na(spp_richness)) |> 
+    filter(mining_area > 0, !is.na(spp_richness)) |> 
     ggplot(aes(mining, spp_richness)) +
     geom_boxplot(aes(fill = mining, color = mining), alpha = 0.25) +
     geom_hline(yintercept = 1, color = "orange", linetype = 2) +
@@ -114,3 +114,9 @@ ggsave(
     width = 2.5, height = 2.5, dpi = 400, bg = "white",
     plot = last_plot()
 )
+
+
+## Does it have additional info on the polygon version
+
+poly <- read_sf("data/Maus-etal_2022_V2_allfiles/global_mining_polygons_v2.gpkg")
+poly
